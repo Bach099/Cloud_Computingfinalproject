@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KINETIC VAULT | HELLO WORLD</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#757576",
+                    "on-surface-variant": "#ababac",
+                    "secondary-container": "#1b4d58",
+                    "surface-dim": "#0d0e0f",
+                    "inverse-on-surface": "#555556",
+                    "tertiary": "#ff6e81",
+                    "surface-container-highest": "#242627",
+                    "primary-fixed": "#00f9cc",
+                    "tertiary-fixed": "#ff909b",
+                    "secondary-fixed-dim": "#acdcea",
+                    "surface": "#0d0e0f",
+                    "surface-tint": "#b9ffe8",
+                    "secondary-fixed": "#baeaf8",
+                    "on-secondary-fixed-variant": "#33626e",
+                    "error-dim": "#d7383b",
+                    "surface-container-lowest": "#000000",
+                    "surface-bright": "#2b2c2e",
+                    "on-background": "#ffffff",
+                    "on-secondary-fixed": "#114551",
+                    "secondary": "#baeaf8",
+                    "on-secondary": "#285864",
+                    "secondary-dim": "#acdcea",
+                    "inverse-surface": "#fbf9fa",
+                    "on-primary-fixed": "#004436",
+                    "surface-container-high": "#1e2021",
+                    "tertiary-fixed-dim": "#ff7989",
+                    "outline-variant": "#474849",
+                    "background": "#0d0e0f",
+                    "on-tertiary-container": "#000000",
+                    "on-tertiary-fixed-variant": "#780023",
+                    "on-tertiary": "#490012",
+                    "on-tertiary-fixed": "#39000c",
+                    "primary-container": "#15ffd1",
+                    "on-primary-container": "#005d4b",
+                    "primary-dim": "#00e9bf",
+                    "on-surface": "#ffffff",
+                    "tertiary-container": "#ff0355",
+                    "surface-container": "#181a1b",
+                    "tertiary-dim": "#e7004c",
+                    "on-error": "#490006",
+                    "surface-container-low": "#121315",
+                    "on-primary-fixed-variant": "#006451",
+                    "primary-fixed-dim": "#00e9bf",
+                    "surface-variant": "#242627",
+                    "inverse-primary": "#006c57",
+                    "primary": "#b9ffe8",
+                    "on-error-container": "#ffa8a3",
+                    "error": "#ff716c",
+                    "on-secondary-container": "#a8d8e6",
+                    "error-container": "#9f0519",
+                    "on-primary": "#006653"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0rem",
+                    "lg": "0rem",
+                    "xl": "0rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0d0e0f;
+            background-image: radial-gradient(#1b4d58 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+        .kinetic-bracket-tl::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            width: 20px;
+            height: 20px;
+            border-top: 2px solid #b9ffe8;
+            border-left: 2px solid #b9ffe8;
+        }
+        .kinetic-bracket-br::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            right: -2px;
+            width: 20px;
+            height: 20px;
+            border-bottom: 2px solid #b9ffe8;
+            border-right: 2px solid #b9ffe8;
+        }
+        .scanline {
+            width: 100%;
+            height: 100px;
+            z-index: 10;
+            background: linear-gradient(0deg, rgba(185, 255, 232, 0) 0%, rgba(185, 255, 232, 0.05) 50%, rgba(185, 255, 232, 0) 100%);
+            opacity: 0.1;
+            position: absolute;
+            top: -100px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="font-body text-on-surface-variant min-h-screen flex flex-col selection:bg-primary selection:text-on-primary">
+<nav class="bg-neutral-950/80 backdrop-blur-md dark:bg-neutral-950/80 fixed top-0 z-50 w-full rounded-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-[1920px] mx-auto">
+<div class="text-2xl font-black tracking-tighter text-teal-200 dark:text-teal-200 uppercase font-headline">
+                KINETIC VAULT
+            </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-neutral-400 hover:text-teal-200 transition-colors duration-300 font-label text-xs tracking-[0.05em] uppercase" href="#">Gallery</a>
+<a class="text-neutral-400 hover:text-teal-200 transition-colors duration-300 font-label text-xs tracking-[0.05em] uppercase" href="#">Exhibitions</a>
+<a class="text-neutral-400 hover:text-teal-200 transition-colors duration-300 font-label text-xs tracking-[0.05em] uppercase" href="#">About</a>
+<a class="text-neutral-400 hover:text-teal-200 transition-colors duration-300 font-label text-xs tracking-[0.05em] uppercase" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="bg-primary text-on-primary font-label text-xs tracking-[0.05em] uppercase py-2 px-6 hover:bg-teal-200/10 hover:text-white transition-all active:scale-[0.98] duration-200 cursor-crosshair">
+                    Explore Gallery
+                </button>
+</div>
+</div>
+</nav>
+<main class="flex-grow flex items-center justify-center relative overflow-hidden px-6 pt-20">
+<div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-container blur-[120px] rounded-full"></div>
+<div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-secondary-container blur-[100px] rounded-full"></div>
+</div>
+<div class="max-w-4xl w-full relative z-10">
+<div class="flex flex-col md:flex-row gap-0">
+<div class="w-full md:w-3/4 bg-surface-container-high p-12 relative kinetic-bracket-tl">
+<div class="flex items-center space-x-3 mb-8">
+<div class="w-2 h-2 bg-primary"></div>
+<span class="font-label text-[10px] tracking-[0.2em] text-primary uppercase">System Initialized // Node 01</span>
+</div>
+<h1 class="font-headline text-6xl md:text-8xl font-black text-on-surface uppercase tracking-tight leading-none mb-8">
+                        Hello<br/>World
+                    </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant font-light leading-relaxed max-w-xl mb-12">
+                        Welcome to the new era of digital curation. A space where <span class="text-primary">intentionality</span> meets the expansive quiet of minimalist design.
+                    </p>
+<div class="flex flex-wrap items-center gap-8">
+<button class="bg-primary text-on-primary font-headline font-bold uppercase py-4 px-10 tracking-widest hover:shadow-[0_0_20px_rgba(185,255,232,0.3)] transition-all active:scale-95">
+                            Explore Gallery
+                        </button>
+<a class="group flex items-center space-x-3 font-label text-xs tracking-[0.15em] uppercase text-secondary hover:text-primary transition-colors" href="#">
+<span>Learn More</span>
+<div class="w-12 h-[1px] bg-secondary group-hover:w-20 group-hover:bg-primary transition-all"></div>
+</a>
+</div>
+</div>
+<div class="w-full md:w-1/4 bg-surface-container p-8 flex flex-col justify-end relative kinetic-bracket-br">
+<div class="space-y-6">
+<div class="border-l border-outline-variant/30 pl-4">
+<p class="font-label text-[10px] text-outline uppercase tracking-widest mb-1">Architecture</p>
+<p class="font-headline text-sm text-on-surface uppercase">Distributed Ledger</p>
+</div>
+<div class="border-l border-outline-variant/30 pl-4">
+<p class="font-label text-[10px] text-outline uppercase tracking-widest mb-1">Status</p>
+<p class="font-headline text-sm text-primary uppercase">Encrypted</p>
+</div>
+<div class="border-l border-outline-variant/30 pl-4">
+<p class="font-label text-[10px] text-outline uppercase tracking-widest mb-1">Protocol</p>
+<p class="font-headline text-sm text-on-surface uppercase">K-Vault V2.0</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 flex items-center justify-between font-label text-[9px] tracking-[0.3em] text-outline uppercase">
+<div class="flex items-center gap-4">
+<span>Lat: 37.7749 N</span>
+<span>Long: 122.4194 W</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="animate-pulse text-primary">● Live Feed</span>
+<span>TS: 2024.05.12_04:00:12</span>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-neutral-950 dark:bg-neutral-950 border-t border-neutral-800/20">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-8 max-w-[1920px] mx-auto w-full">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<span class="font-headline font-bold text-teal-200 uppercase text-sm tracking-widest">KINETIC VAULT</span>
+<span class="font-['Space_Grotesk'] uppercase text-[10px] tracking-[0.1em] text-neutral-500">© 2024 KINETIC VAULT. PROTOCOL SECURED.</span>
+</div>
+<div class="flex gap-8 mt-6 md:mt-0">
+<a class="font-['Space_Grotesk'] uppercase text-[10px] tracking-[0.1em] text-neutral-500 hover:text-teal-100 transition-colors" href="#">Terms</a>
+<a class="font-['Space_Grotesk'] uppercase text-[10px] tracking-[0.1em] text-neutral-500 hover:text-teal-100 transition-colors" href="#">Privacy</a>
+<a class="font-['Space_Grotesk'] uppercase text-[10px] tracking-[0.1em] text-neutral-500 hover:text-teal-100 transition-colors" href="#">Status</a>
+</div>
+</div>
+</footer>
+</body></html>
